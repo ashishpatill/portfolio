@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   authors: [{ name: site.name, url: site.github }],
   creator: site.name,
   keywords: [
-    "Ashish P",
+    "Ashish Pisey",
     "Senior iOS engineer",
     "Swift",
     "UIKit",

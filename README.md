@@ -1,6 +1,6 @@
-# Ashish P. Portfolio
+# Ashish Pisey. Portfolio
 
-Personal site for [Ashish P](https://github.com/ashishpatill): Senior iOS engineer. Twelve years shipping consumer apps. Mumbai.
+Personal site for [Ashish Pisey](https://github.com/ashishpatill): Senior iOS engineer. Twelve years shipping consumer apps. Mumbai.
 
 **Live:** [https://ashish-portfolio-a29b.onrender.com](https://ashish-portfolio-a29b.onrender.com)
 
@@ -76,4 +76,4 @@ See [BUILD-NOTES.md](./BUILD-NOTES.md) for design choices and content gaps.
 
 ## License
 
-[MIT](./LICENSE) © 2026 Ashish P
+[MIT](./LICENSE) © 2026 Ashish Pisey

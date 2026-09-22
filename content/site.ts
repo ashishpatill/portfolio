@@ -1,7 +1,7 @@
 export const site = {
-  name: "Ashish P",
+  name: "Ashish Pisey",
   handle: "ashishpatill",
-  title: "Ashish P. Senior iOS engineer",
+  title: "Ashish Pisey. Senior iOS engineer",
   role: "Swift. UIKit / SwiftUI. Product ownership. IIT Jodhpur MTech AI/ML.",
   headline:
     "Senior iOS engineer. Twelve years shipping consumer apps. Still writes the code.",
@@ -10,7 +10,7 @@ export const site = {
   location: "Mumbai",
   availability: "Hireable",
   description:
-    "Senior iOS engineer. Twelve years shipping consumer apps. Swift, UIKit, SwiftUI, and product ownership. IIT Jodhpur MTech AI/ML. Based in Mumbai.",
+    "Ashish Pisey. Senior iOS engineer. Twelve years shipping consumer apps. Swift, UIKit, SwiftUI, and product ownership. IIT Jodhpur MTech AI/ML. Based in Mumbai.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   avatar: "/avatar.png",
   github: "https://github.com/ashishpatill",
