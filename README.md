@@ -2,6 +2,8 @@
 
 Personal site for [Ashish P](https://github.com/ashishpatill): twelve years of iOS craft, now building coding-agent harnesses and independent design tooling in Mumbai.
 
+**Live:** [https://ashish-portfolio-a29b.onrender.com](https://ashish-portfolio-a29b.onrender.com)
+
 Live content is typed in `content/`. Featured work links only to public GitHub repositories. There is no invented product URL, user count, or SaaS claim.
 
 The design is original. It is inspired by the restraint of editorial one-pagers (Brittany Chiang, Lee Robinson, Rauno), not a fork of `bchiang7/v4` or any template.
@@ -41,13 +43,13 @@ pnpm start
 
 Case study routes are generated from featured slugs at `/work/[slug]`.
 
-Set `NEXT_PUBLIC_SITE_URL` to the canonical host before you care about sitemap, robots, and Open Graph absolute URLs. Until then the fallback is `http://localhost:3000`.
+Set `NEXT_PUBLIC_SITE_URL` to the canonical host before you care about sitemap, robots, and Open Graph absolute URLs. On Render this is already set to the live origin below.
 
 ## Deploy
 
-**Render URL (placeholder):** add the `*.onrender.com` origin here after the first Web Service exists. Do not guess it.
+**Render URL:** [https://ashish-portfolio-a29b.onrender.com](https://ashish-portfolio-a29b.onrender.com)
 
-**Render (intended host).** Node web service, branch `main`, free plan OK.
+**Render (host).** Node web service `ashish-portfolio`, branch `main`, free plan, Singapore region.
 
 | Setting | Value |
 | --- | --- |
@@ -55,8 +57,9 @@ Set `NEXT_PUBLIC_SITE_URL` to the canonical host before you care about sitemap, 
 | Build | `pnpm install && pnpm build` |
 | Start | `pnpm start` |
 | Bind | `0.0.0.0:$PORT` (Render sets `PORT`) |
+| Env | `NEXT_PUBLIC_SITE_URL=https://ashish-portfolio-a29b.onrender.com` |
 
-Full click-path: [RENDER.md](./RENDER.md). After the first deploy, set `NEXT_PUBLIC_SITE_URL` to that origin and redeploy.
+Full click-path: [RENDER.md](./RENDER.md).
 
 **Vercel.** Import this repo, framework preset Next.js, `pnpm install` / `pnpm build`. Same `NEXT_PUBLIC_SITE_URL` rule.
 
