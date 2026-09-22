@@ -12,7 +12,7 @@ The design is original. It is inspired by the restraint of editorial one-pagers 
 - TypeScript
 - Tailwind CSS v4
 - `next/font` (Newsreader + Geist)
-- Static where possible, Vercel-friendly
+- Static pages where possible. Render Node web service (see [RENDER.md](./RENDER.md))
 
 ## Run locally
 
@@ -41,13 +41,26 @@ pnpm start
 
 Case study routes are generated from featured slugs at `/work/[slug]`.
 
-Set `NEXT_PUBLIC_SITE_URL` to the canonical host before you care about sitemap, robots, and Open Graph absolute URLs. Local fallback is `https://ashishpatill.github.io/portfolio`.
+Set `NEXT_PUBLIC_SITE_URL` to the canonical host before you care about sitemap, robots, and Open Graph absolute URLs. Until then the fallback is `http://localhost:3000`.
 
 ## Deploy
 
-**Vercel (preferred).** Import this repo, framework preset Next.js, install command `pnpm install`, build command `pnpm build`. Add `NEXT_PUBLIC_SITE_URL` as the production origin (your Vercel domain or a custom domain).
+**Render URL (placeholder):** add the `*.onrender.com` origin here after the first Web Service exists. Do not guess it.
 
-**GitHub Pages.** This app uses App Router features (`opengraph-image`, `icon`) that assume a Node server. Static `output: "export"` is possible later, but you would drop or replace generated OG/icon routes. Vercel is the intended host.
+**Render (intended host).** Node web service, branch `main`, free plan OK.
+
+| Setting | Value |
+| --- | --- |
+| Runtime | Node |
+| Build | `pnpm install && pnpm build` |
+| Start | `pnpm start` |
+| Bind | `0.0.0.0:$PORT` (Render sets `PORT`) |
+
+Full click-path: [RENDER.md](./RENDER.md). After the first deploy, set `NEXT_PUBLIC_SITE_URL` to that origin and redeploy.
+
+**Vercel.** Import this repo, framework preset Next.js, `pnpm install` / `pnpm build`. Same `NEXT_PUBLIC_SITE_URL` rule.
+
+**GitHub Pages / Render Static Site.** Not used. This app keeps `opengraph-image` and `icon` on a Node server. There is no `output: "export"` and no `out/` publish path.
 
 ## Featured work
 

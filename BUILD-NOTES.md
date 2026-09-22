@@ -24,7 +24,7 @@ Short record for the owner. What was chosen, what was left honest, what you may 
 ## Content gaps for you
 
 - The 2013 to 2024 iOS chapter has no employer names. Add them in `content/experience.ts` if you want that on the record.
-- `NEXT_PUBLIC_SITE_URL` should become the real production origin after the first Vercel deploy.
+- `NEXT_PUBLIC_SITE_URL` should become the real Render origin after the first Web Service exists. Do not invent the `*.onrender.com` host. See RENDER.md.
 - If you later publish a Tell capture host or Nagrik HTTPS demo, add it as an optional link in `content/projects.ts`. Do not add it until it exists.
 - Avatar is the GitHub portrait (`public/avatar.png`). Swap if you want a different crop.
 - DiskSense is public and recent. It was left out of featured work because the brief named four case studies. Easy to add as archive if you want.
@@ -32,7 +32,7 @@ Short record for the owner. What was chosen, what was left honest, what you may 
 
 ## Implementation notes
 
-- Next.js 15.5 + React 19 + Tailwind v4 + pnpm.
+- Next.js 15.5 + React 19 + Tailwind v4 + pnpm. Render start binds `0.0.0.0:$PORT`.
 - Content is typed TypeScript, not MDX. Same edit surface, fewer moving parts.
 - `pnpm create next-app@15` scaffolded the toolchain. All UI, copy, and design tokens were written for this repo.
 - Stills are vendored under `public/projects/` so the site does not hotlink GitHub raw assets.

@@ -11,7 +11,7 @@ export const site = {
   availability: "Hireable",
   description:
     "Personal portfolio of Ashish P. iOS craft, coding-agent harnesses, and independent design tooling. Based in Mumbai. Open to work.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ashishpatill.github.io/portfolio",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   avatar: "/avatar.png",
   github: "https://github.com/ashishpatill",
   githubProfile: "https://github.com/ashishpatill",
