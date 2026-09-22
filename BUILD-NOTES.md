@@ -19,7 +19,7 @@ Short record for the owner. What was chosen, what was left honest, what you may 
 - BIMExtract / BIMWeb / related archives are not featured.
 - BIMLabz is framed as a personal studio. One sentence. No demo links.
 - harness-from-scratch is a teaching repo, not a product.
-- No public email on the GitHub profile, so contact is GitHub + X (`@inqusit`) only.
+- Contact is email, LinkedIn, GitHub, and the resume PDF on this site. X stays public in the header.
 
 ## Content gaps for you
 

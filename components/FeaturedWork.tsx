@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { featuredProjects } from "@/content/projects";
+import { featuredIntro, featuredProjects } from "@/content/projects";
 import { ArrowUpRightIcon } from "@/components/icons";
 import { ProjectArt } from "@/components/ProjectArt";
 import { Reveal } from "@/components/Reveal";
@@ -18,8 +18,7 @@ export function FeaturedWork() {
           <SectionHeading index="03" title="Selected work" />
         </div>
         <p className="mt-4 max-w-xl text-[0.98rem] leading-7 text-muted">
-          Public repositories only. Each card is a case, not a landing-page
-          metric. Open source or local dogfood. No invented live products.
+          {featuredIntro}
         </p>
       </Reveal>
 

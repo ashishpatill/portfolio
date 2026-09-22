@@ -97,20 +97,25 @@ export function SiteHeader() {
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <a
-              href={site.github}
-              target="_blank"
-              rel="noreferrer noopener"
+              href={`mailto:${site.email}`}
               className="inline-flex items-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-[#1a1408] transition-colors hover:bg-accent-soft"
             >
-              GitHub
+              Email
             </a>
             <a
-              href={site.x}
+              href={site.linkedin}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center rounded-full border border-line px-4 py-2 text-sm text-ink transition-colors hover:border-accent/50 hover:text-accent"
             >
-              X
+              LinkedIn
+            </a>
+            <a
+              href={site.resumePath}
+              download="Ashish_Pisey_iOS_Resume.pdf"
+              className="inline-flex items-center rounded-full border border-line px-4 py-2 text-sm text-ink transition-colors hover:border-accent/50 hover:text-accent"
+            >
+              Resume
             </a>
             <a
               href="#work"

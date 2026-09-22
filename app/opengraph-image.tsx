@@ -63,8 +63,8 @@ export default function OpenGraphImage() {
             color: "#9c968c",
           }}
         >
+          <span>linkedin.com/in/ashishpisey</span>
           <span>github.com/ashishpatill</span>
-          <span>x.com/inqusit</span>
         </div>
       </div>
     ),

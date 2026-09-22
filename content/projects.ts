@@ -38,10 +38,23 @@ export type FeaturedProject = {
 export type ArchiveItem = {
   title: string;
   description: string;
-  href: string;
+  href?: string;
   year: string;
   stack: string;
 };
+
+export const featuredIntro =
+  "Featured work is limited to public repos with runnable demos. Private studio work stays unnamed as products until it ships.";
+
+export const studioArchive: ArchiveItem[] = [
+  {
+    title: "BIMLabz studio (private)",
+    description:
+      "Agent harnesses, RAG experiments, macOS tools. Not public SaaS.",
+    year: "studio",
+    stack: "private",
+  },
+];
 
 export const featuredProjects: FeaturedProject[] = [
   {

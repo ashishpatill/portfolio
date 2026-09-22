@@ -1,6 +1,6 @@
 # Ashish P. Portfolio
 
-Personal site for [Ashish P](https://github.com/ashishpatill): twelve years of iOS craft, now building coding-agent harnesses and independent design tooling in Mumbai.
+Personal site for [Ashish P](https://github.com/ashishpatill): Senior iOS engineer. Twelve years shipping consumer apps. Mumbai.
 
 **Live:** [https://ashish-portfolio-a29b.onrender.com](https://ashish-portfolio-a29b.onrender.com)
 

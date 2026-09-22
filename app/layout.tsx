@@ -32,10 +32,10 @@ export const metadata: Metadata = {
   creator: site.name,
   keywords: [
     "Ashish P",
-    "iOS engineer",
-    "agent harnesses",
-    "Tell Proof",
-    "design tooling",
+    "Senior iOS engineer",
+    "Swift",
+    "UIKit",
+    "SwiftUI",
     "Mumbai",
   ],
   alternates: {
@@ -78,7 +78,8 @@ const personJsonLd = {
     addressLocality: "Mumbai",
     addressCountry: "IN",
   },
-  sameAs: [site.github, site.x],
+  email: site.email,
+  sameAs: [site.github, site.x, site.linkedin],
 };
 
 export default function RootLayout({

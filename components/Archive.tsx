@@ -1,6 +1,51 @@
-import { iosArchive, notesArchive } from "@/content/projects";
+import {
+  iosArchive,
+  notesArchive,
+  studioArchive,
+  type ArchiveItem,
+} from "@/content/projects";
 import { ArrowUpRightIcon } from "@/components/icons";
 import { Reveal } from "@/components/Reveal";
+
+function ArchiveRow({ item }: { item: ArchiveItem }) {
+  const body = (
+    <>
+      <span>
+        <span className="text-ink transition-colors group-hover:text-accent">
+          {item.title}
+        </span>
+        <span className="mt-1 block text-sm text-muted sm:ml-0">
+          {item.description}
+        </span>
+      </span>
+      <span className="flex shrink-0 items-center gap-2 font-mono text-[0.7rem] text-dim">
+        {item.stack}
+        {item.href ? (
+          <ArrowUpRightIcon className="external-arrow size-3.5" />
+        ) : null}
+      </span>
+    </>
+  );
+
+  if (item.href) {
+    return (
+      <a
+        href={item.href}
+        target="_blank"
+        rel="noreferrer noopener"
+        className="group flex items-baseline justify-between gap-4 py-3.5"
+      >
+        {body}
+      </a>
+    );
+  }
+
+  return (
+    <div className="flex items-baseline justify-between gap-4 py-3.5">
+      {body}
+    </div>
+  );
+}
 
 export function Archive() {
   return (
@@ -14,36 +59,32 @@ export function Archive() {
           More projects
         </h2>
         <p className="mt-4 max-w-xl text-[0.98rem] leading-7 text-muted">
-          Selected iOS craft, then a quieter learning archive. Links only.
+          One private studio note, then selected iOS craft and a quieter
+          learning archive.
         </p>
       </Reveal>
 
       <Reveal className="mt-8">
         <h3 className="font-mono text-[0.72rem] tracking-[0.12em] text-dim uppercase">
+          Studio
+        </h3>
+        <ul className="mt-4 divide-y divide-line border-y border-line">
+          {studioArchive.map((item) => (
+            <li key={item.title}>
+              <ArchiveRow item={item} />
+            </li>
+          ))}
+        </ul>
+      </Reveal>
+
+      <Reveal className="mt-10">
+        <h3 className="font-mono text-[0.72rem] tracking-[0.12em] text-dim uppercase">
           iOS craft
         </h3>
         <ul className="mt-4 divide-y divide-line border-y border-line">
           {iosArchive.map((item) => (
-            <li key={item.href}>
-              <a
-                href={item.href}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="group flex items-baseline justify-between gap-4 py-3.5"
-              >
-                <span>
-                  <span className="text-ink transition-colors group-hover:text-accent">
-                    {item.title}
-                  </span>
-                  <span className="mt-1 block text-sm text-muted sm:ml-0">
-                    {item.description}
-                  </span>
-                </span>
-                <span className="flex shrink-0 items-center gap-2 font-mono text-[0.7rem] text-dim">
-                  {item.stack}
-                  <ArrowUpRightIcon className="external-arrow size-3.5" />
-                </span>
-              </a>
+            <li key={item.href ?? item.title}>
+              <ArchiveRow item={item} />
             </li>
           ))}
         </ul>
@@ -55,7 +96,7 @@ export function Archive() {
         </h3>
         <ul className="mt-4 grid gap-3 sm:grid-cols-3">
           {notesArchive.map((item) => (
-            <li key={item.href}>
+            <li key={item.href ?? item.title}>
               <a
                 href={item.href}
                 target="_blank"
