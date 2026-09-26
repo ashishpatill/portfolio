@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SuperLearn AI — BIMLabz</title><style>
+:root{--bg:#0f1419;--panel:#171d25;--panel2:#1c2430;--border:#2a3441;--text:#e8eef5;--muted:#9aa8b8;--accent:#5b9fd4;--ok:#3d9a6a;--warn:#c9a227;--bad:#c45c5c}
+*{box-sizing:border-box}body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.45}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1100px;margin:0 auto;padding:1.25rem 1.5rem 3rem}
+.topnav{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-bottom:1.25rem;padding-bottom:.85rem;border-bottom:1px solid var(--border);font-size:.9rem}
+.topnav .back{font-weight:600}
+h1{margin:0 0 .35rem;font-size:1.55rem}h2{margin:1.5rem 0 .75rem;font-size:1.1rem}
+.meta{color:var(--muted);font-size:.88rem;margin:0 0 1.25rem}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;margin-bottom:.75rem}
+.grid{display:grid;gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin:1rem 0 1.5rem}
+.stat{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem}
+.stat .n{font-size:1.6rem;font-weight:700}.stat .l{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.stat.pending .n{color:var(--accent)}.stat.stalled .n{color:var(--warn)}.stat.completed .n{color:var(--ok)}.stat.other .n{color:var(--muted)}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;padding:.15rem .45rem;border-radius:5px;border:1px solid var(--border);background:var(--panel2)}
+.pill.pending{color:var(--accent)}.pill.stalled{color:var(--warn)}.pill.completed{color:var(--ok)}.pill.other{color:var(--muted)}
+.sheet-banner{background:rgba(91,159,212,.12);border:1px solid rgba(91,159,212,.4);border-radius:10px;padding:1rem 1.1rem;margin:1rem 0 1.5rem;font-size:.95rem}
+.sheet-banner a{font-weight:700;font-size:1.05rem}
+table{width:100%;border-collapse:collapse;font-size:.86rem;background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+th,td{padding:.55rem .65rem;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:var(--panel2);color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;position:sticky;top:0}
+tr:last-child td{border-bottom:none}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1rem}
+.filters button{background:var(--panel2);border:1px solid var(--border);color:var(--text);border-radius:999px;padding:.35rem .75rem;cursor:pointer;font-size:.82rem}
+.filters button.active{border-color:var(--accent);color:var(--accent)}
+.muted{color:var(--muted)}
+.row{display:grid;grid-template-columns:6rem 1fr;gap:.35rem .75rem;margin:.35rem 0}
+dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}dd{margin:0;font-size:.9rem}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85em}
+footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.8rem}
+</style></head><body>
+<div class="wrap">
+  <div class="topnav">
+    <a class="back" href="BIMLABZ-PROJECT-DASHBOARD.html">← Main dashboard</a>
+    <a href="group-superlearn.html">SuperLearn</a>
+    <a href="group-dnd-partners.html">D&amp;D Partners</a>
+    <a href="group-bimrag.html">BIMRAG</a>
+    <a href="group-linkedin-jobs.html">LinkedIn Jobs</a>
+    <a href="group-x-account.html">X Account</a>
+  </div>
+  <h1>SuperLearn AI</h1>
+  <p class="meta">Group detail page · updated 2026-09-27 00:06 IST · needs money (S3, Neon, model API)</p>
+
+  <div class="card">
+    <span class="pill pending">In progress</span>
+    <h2 style="margin-top:.75rem">Status</h2>
+    <dl>
+      <div class="row"><dt>Done</dt><dd>Linear Algebra lesson remuxes on main; media on Amazon S3 (Simple Storage Service); lesson text in Neon database; AI Notes plan and P0 work; Dodo Payments sandbox webhook proof.</dd></div>
+      <div class="row"><dt>Blocked / pending</dt><dd>Some media, theme, and nav items; INR pricing decisions held where noted; probability / optimization curriculum media parked until Ashish asks; Cloudflare tunnel nav speed still open.</dd></div>
+      <div class="row"><dt>Cost</dt><dd>Needs money — Amazon S3, Neon, and language-model application programming interface (API) calls.</dd></div>
+      <div class="row"><dt>Owner bots</dt><dd>Frontend Engineer, Web Designer, Product Ops, Tech Lead (reviews), GTM / Revenue (pricing).</dd></div>
+    </dl>
+  </div>
+
+  <h2>Workstreams</h2>
+  <div class="card"><strong>Curriculum / media</strong><br/>LA remuxes largely on main. Probability Lesson 1 media and Optimization curriculum media are parked per Ashish (2026-09-09).</div>
+  <div class="card"><strong>AI Notes</strong><br/>Plan approved; P0 shipped path; later theme pass with Web Designer after shape lands.</div>
+  <div class="card"><strong>Infra</strong><br/>Neon + S3 + Cloudflare wired from Mac env for Learn sync. Keep secrets out of chat.</div>
+  <div class="card"><strong>Monetization</strong><br/>Pricing / positioning research in flight with GTM. Do not invent price claims here.</div>
+
+  <footer>Path <code>plans/group-superlearn.html</code> · Back to <a href="BIMLABZ-PROJECT-DASHBOARD.html">main dashboard</a></footer>
+</div></body></html>
