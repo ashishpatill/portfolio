@@ -58,13 +58,13 @@ export const studioArchive: ArchiveItem[] = [
 
 export const featuredProjects: FeaturedProject[] = [
   {
-    slug: "tell-proof",
+    slug: "design-proof",
     index: "01",
     year: "2026",
-    title: "Tell Proof",
+    title: "Design Proof",
     kicker: "Design layer for agent harnesses",
     summary:
-      "Agents write code. Tell proves the UI, then helps you ship design that looks intentional, not AI-default.",
+      "Agents write code. Design Proof proves the UI, then helps you ship design that looks intentional, not AI-default.",
     problem:
       "Coding agents compile. They still ship the same generated look: system fonts, violet accents, shadow on every card. The harness grades its own homework.",
     approach:
@@ -72,32 +72,32 @@ export const featuredProjects: FeaturedProject[] = [
     shipped:
       "Next.js monorepo, MCP tools, Studio skill graph, and a captioned product demo. Open source. Local dogfood. No public production host claimed here.",
     stack: ["Next.js", "TypeScript", "MCP", "Playwright", "pnpm"],
-    repo: "https://github.com/ashishpatill/tell-proof",
-    repoLabel: "ashishpatill/tell-proof",
+    repo: "https://github.com/ashishpatill/designproof",
+    repoLabel: "ashishpatill/designproof",
     status: "Open source · local dogfood",
     image: {
-      src: "/projects/tell-proof-poster.webp",
-      alt: "Tell Proof product still: capture, named tells, and a before/after seam",
+      src: "/projects/design-proof-poster.webp",
+      alt: "Design Proof product still: capture, named tells, and a before/after seam",
     },
     gallery: [
       {
-        src: "/projects/tell-proof-detect.webp",
-        alt: "Tell Report naming fourteen detector findings on a captured page",
+        src: "/projects/design-proof-detect.webp",
+        alt: "Design Proof report naming fourteen detector findings on a captured page",
       },
       {
-        src: "/projects/tell-proof-prove.webp",
+        src: "/projects/design-proof-prove.webp",
         alt: "Before and after seam comparing a generic capture to a reconciled editorial pass",
       },
     ],
     caseStudy: {
       lede:
-        "Tell sits beside Cursor as an independent design runtime. The authoring agent proposes. Tell measures, critiques, redesigns, and verifies. Humans stay in control.",
+        "Design Proof sits beside Cursor as an independent design runtime. The authoring agent proposes. Design Proof measures, critiques, redesigns, and verifies. Humans stay in control.",
       sections: [
         {
           heading: "The gap",
           body: [
             "Ask an agent to make a page prettier and you usually get the same defaults again. That is not a failure of effort. The harness is optimized for compiling code and local file edits. Production UI needs composition, contrast, token rhythm, and an independent proof loop.",
-            "Tell is the missing design layer for agent-built software. It is not a replacement for a11y, security, or functional tests. It is the visual evidence most harnesses still skip.",
+            "Design Proof is the missing design layer for agent-built software. It is not a replacement for a11y, security, or functional tests. It is the visual evidence most harnesses still skip.",
           ],
         },
         {
@@ -112,7 +112,7 @@ export const featuredProjects: FeaturedProject[] = [
           heading: "What is on disk",
           body: [
             "A pnpm monorepo: Next.js report and Studio UI, a shared engine, and an MCP server with eleven tell_* tools. Deterministic capture and detectors run without a model. Models only help where language helps.",
-            "The in-repo demo video walks capture, named tells, the seam, voice direction, a draft Cursor patch, then Studio specimens. I dogfood Tell on itself. There is no public live product URL on this site because the honest home is the repository.",
+            "The in-repo demo video walks capture, named tells, the seam, voice direction, a draft Cursor patch, then Studio specimens. I dogfood Design Proof on itself. There is no public live product URL on this site because the honest home is the repository.",
           ],
         },
       ],

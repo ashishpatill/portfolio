@@ -79,7 +79,7 @@ const personJsonLd = {
     addressCountry: "IN",
   },
   email: site.email,
-  sameAs: [site.github, site.x, site.linkedin],
+  sameAs: [site.github, site.x],
 };
 
 export default function RootLayout({

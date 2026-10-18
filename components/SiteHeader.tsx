@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { nav, site, type NavId } from "@/content/site";
-import { SocialLinks } from "@/components/SocialLinks";
 import { cn } from "@/lib/cn";
 
 const sectionIds = nav.map((item) => item.id);
@@ -95,36 +94,6 @@ export function SiteHeader() {
             {site.blurb}
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center gap-3">
-            <a
-              href={`mailto:${site.email}`}
-              className="inline-flex items-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-[#1a1408] transition-colors hover:bg-accent-soft"
-            >
-              Email
-            </a>
-            <a
-              href={site.linkedin}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="inline-flex items-center rounded-full border border-line px-4 py-2 text-sm text-ink transition-colors hover:border-accent/50 hover:text-accent"
-            >
-              LinkedIn
-            </a>
-            <a
-              href={site.resumePath}
-              download="Ashish_Pisey_iOS_Resume.pdf"
-              className="inline-flex items-center rounded-full border border-line px-4 py-2 text-sm text-ink transition-colors hover:border-accent/50 hover:text-accent"
-            >
-              Resume
-            </a>
-            <a
-              href="#work"
-              className="inline-flex items-center rounded-full px-3 py-2 text-sm text-muted transition-colors hover:text-ink"
-            >
-              Selected work
-            </a>
-          </div>
-
           <nav className="mt-14 hidden lg:block" aria-label="Primary">
             <ul className="flex flex-col gap-4">
               {nav.map((item) => (
@@ -145,7 +114,6 @@ export function SiteHeader() {
           </nav>
         </div>
 
-        <SocialLinks className="mt-12 hidden lg:flex" />
       </header>
     </aside>
   );

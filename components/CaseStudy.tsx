@@ -6,7 +6,6 @@ import {
 } from "@/content/projects";
 import { ArrowLeftIcon, ArrowUpRightIcon } from "@/components/icons";
 import { ProjectArt } from "@/components/ProjectArt";
-import { SocialLinks } from "@/components/SocialLinks";
 
 type CaseStudyProps = {
   project: FeaturedProject;
@@ -25,7 +24,6 @@ export function CaseStudy({ project }: CaseStudyProps) {
           <ArrowLeftIcon className="size-4" />
           Back to work
         </Link>
-        <SocialLinks />
       </header>
 
       <p className="mt-14 font-mono text-[0.72rem] tracking-[0.14em] text-accent uppercase">

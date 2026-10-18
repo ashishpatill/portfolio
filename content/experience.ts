@@ -18,7 +18,7 @@ export const experience: ExperienceItem[] = [
     summary:
       "Publishing public harness and design tooling while studying AI/ML.",
     points: [
-      "Public repos: Tell Proof, harness-from-scratch, grok-kit, Nagrik Saathi.",
+      "Public repos: Design Proof, harness-from-scratch, grok-kit, Nagrik Saathi.",
       "BIMLabz private studio for agent tooling and applied ML. Not public SaaS.",
     ],
   },

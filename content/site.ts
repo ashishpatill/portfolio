@@ -15,8 +15,7 @@ export const site = {
   avatar: "/avatar.png",
   github: "https://github.com/ashishpatill",
   githubProfile: "https://github.com/ashishpatill",
-  x: "https://x.com/inqusit",
-  linkedin: "https://www.linkedin.com/in/ashishpisey",
+  x: "https://x.com/builtinmind",
   email: "ashish.dev.ios@gmail.com",
   resumePath: "/Ashish_Pisey_iOS_Resume.pdf",
   studio: "BIMLabz",
@@ -43,6 +42,6 @@ export const about = {
 
 export const contact = {
   heading: "Say hello",
-  body: "Email me, write on LinkedIn, open GitHub, or download the resume PDF. Those four are the ways in.",
-  cta: "Email. LinkedIn. GitHub. Resume PDF.",
+  body: "Email me, open GitHub, find me on X, or download the resume PDF. Those four are the ways in.",
+  cta: "Email. GitHub. X. Resume PDF.",
 };

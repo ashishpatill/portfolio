@@ -32,21 +32,21 @@ export function Contact() {
             <ArrowUpRightIcon className="size-4" />
           </a>
           <a
-            href={site.linkedin}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm text-ink transition-colors hover:border-accent/50"
-          >
-            LinkedIn
-            <ArrowUpRightIcon className="size-4" />
-          </a>
-          <a
             href={site.github}
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm text-ink transition-colors hover:border-accent/50"
           >
             GitHub
+            <ArrowUpRightIcon className="size-4" />
+          </a>
+          <a
+            href={site.x}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm text-ink transition-colors hover:border-accent/50"
+          >
+            X
             <ArrowUpRightIcon className="size-4" />
           </a>
           <a
