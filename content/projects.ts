@@ -267,44 +267,6 @@ export const featuredProjects: FeaturedProject[] = [
   },
 ];
 
-export const iosArchive: ArchiveItem[] = [
-  {
-    title: "LoaderToSwitchAnimation",
-    description: "Custom control: load, then animate into a switch.",
-    href: "https://github.com/ashishpatill/LoaderToSwitchAnimation",
-    year: "2024",
-    stack: "Swift",
-  },
-  {
-    title: "VerticalScrollEffect",
-    description: "Scroll physics and motion in SwiftUI.",
-    href: "https://github.com/ashishpatill/VerticalScrollEffect",
-    year: "2023",
-    stack: "SwiftUI",
-  },
-  {
-    title: "WeSplit",
-    description: "SwiftUI practice: forms, state, tip calculator.",
-    href: "https://github.com/ashishpatill/WeSplit",
-    year: "2022",
-    stack: "SwiftUI",
-  },
-  {
-    title: "SwiftUI-Basics",
-    description: "Stacks, navigation, modifiers, custom containers.",
-    href: "https://github.com/ashishpatill/SwiftUI-Basics",
-    year: "2022",
-    stack: "SwiftUI",
-  },
-  {
-    title: "Data_Structures_Swift",
-    description: "Interview structures and algorithms in Swift.",
-    href: "https://github.com/ashishpatill/Data_Structures_Swift",
-    year: "2022",
-    stack: "Swift",
-  },
-];
-
 export const notesArchive: ArchiveItem[] = [
   {
     title: "LearningML",

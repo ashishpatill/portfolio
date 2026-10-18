@@ -12,7 +12,7 @@ export function Contact() {
     >
       <Reveal>
         <div id="contact-heading">
-          <SectionHeading index="05" title="Contact" />
+          <SectionHeading index="06" title="Contact" />
         </div>
         <h3 className="mt-8 font-serif text-4xl text-ink sm:text-5xl">
           {contact.heading}

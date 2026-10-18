@@ -26,6 +26,7 @@ export const nav = [
   { id: "about", label: "About", href: "/#about" },
   { id: "experience", label: "Experience", href: "/#experience" },
   { id: "work", label: "Work", href: "/#work" },
+  { id: "hackathons", label: "Hackathons", href: "/#hackathons" },
   { id: "contact", label: "Contact", href: "/#contact" },
 ] as const;
 

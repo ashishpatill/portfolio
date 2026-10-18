@@ -3,6 +3,7 @@ import { Archive } from "@/components/Archive";
 import { Contact } from "@/components/Contact";
 import { Experience } from "@/components/Experience";
 import { FeaturedWork } from "@/components/FeaturedWork";
+import { Hackathons } from "@/components/Hackathons";
 import { Footer } from "@/components/Footer";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SkipLink } from "@/components/SkipLink";
@@ -21,6 +22,7 @@ export default function HomePage() {
             <About />
             <Experience />
             <FeaturedWork />
+            <Hackathons />
             <Archive />
             <Contact />
           </div>

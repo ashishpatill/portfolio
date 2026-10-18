@@ -1,5 +1,4 @@
 import {
-  iosArchive,
   notesArchive,
   studioArchive,
   type ArchiveItem,
@@ -55,12 +54,11 @@ export function Archive() {
           id="archive-heading"
           className="flex items-baseline gap-3 text-sm font-semibold tracking-[0.16em] text-ink uppercase"
         >
-          <span className="font-mono text-accent">04</span>
+          <span className="font-mono text-accent">05</span>
           More projects
         </h2>
         <p className="mt-4 max-w-xl text-[0.98rem] leading-7 text-muted">
-          One private studio note, then selected iOS craft and a quieter
-          learning archive.
+          One private studio note, then a quieter learning archive.
         </p>
       </Reveal>
 
@@ -71,19 +69,6 @@ export function Archive() {
         <ul className="mt-4 divide-y divide-line border-y border-line">
           {studioArchive.map((item) => (
             <li key={item.title}>
-              <ArchiveRow item={item} />
-            </li>
-          ))}
-        </ul>
-      </Reveal>
-
-      <Reveal className="mt-10">
-        <h3 className="font-mono text-[0.72rem] tracking-[0.12em] text-dim uppercase">
-          iOS craft
-        </h3>
-        <ul className="mt-4 divide-y divide-line border-y border-line">
-          {iosArchive.map((item) => (
-            <li key={item.href ?? item.title}>
               <ArchiveRow item={item} />
             </li>
           ))}
